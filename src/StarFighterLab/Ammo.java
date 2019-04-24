@@ -1,3 +1,5 @@
+package StarFighterLab;
+
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
@@ -20,32 +22,42 @@ public class Ammo extends MovingThing
 	public Ammo(int x, int y)
 	{
 		//add code
+            super(x,y);
 	}
 
 	public Ammo(int x, int y, int s)
 	{
 		//add code
+            super(x,y);
+            speed = s;
 	}
 
 	public void setSpeed(int s)
 	{
 	   //add code
+            speed = s;
 	}
 
 	public int getSpeed()
 	{
-	   return 0;
+	   return speed;
 	}
 
 	public void draw( Graphics window )
 	{
 		//add code to draw the ammo
+            window.setColor(Color.YELLOW);
+            window.drawOval(getX(), getY(), 10, 10);
+            
 	}
 	
 	
 	public void move( String direction )
 	{
 		//add code to draw the ammo
+            if(direction == "SPACE"){
+                super.setY(super.getY()-speed);
+            }
 	}
 
 	public String toString()

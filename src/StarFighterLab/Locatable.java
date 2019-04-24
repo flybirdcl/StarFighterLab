@@ -1,4 +1,6 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package StarFighterLab;
+
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
