@@ -1,4 +1,4 @@
-package StarFighterLab;
+package starfighterlab;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com
@@ -25,6 +25,7 @@ public class Bullets
 	{
             ammo.add(al);
 	}
+       
 
 	//post - draw each Ammo
 	public void drawEmAll( Graphics window )

@@ -1,4 +1,4 @@
-package StarFighterLab;
+package starfighterlab;
 
 //(c) A+ Computer Science
 //www.apluscompsci.com
@@ -23,6 +23,7 @@ public class Ammo extends MovingThing
 	{
 		//add code
             super(x,y);
+            speed = 5;
 	}
 
 	public Ammo(int x, int y, int s)
@@ -57,6 +58,9 @@ public class Ammo extends MovingThing
 		//add code to draw the ammo
             if(direction == "SPACE"){
                 super.setY(super.getY()-speed);
+            }
+            if(direction == "DOWN"){
+                super.setY(super.getY()+speed);
             }
 	}
 
